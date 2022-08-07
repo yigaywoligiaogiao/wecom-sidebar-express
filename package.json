@@ -1,0 +1,37 @@
+{
+  "name": "wecom-sidebar-sls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sls.js",
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "./node_modules/.bin/nodemon bin/www",
+    "prd": "pm2 start bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "sls deploy"
+  },
+  "author": "HaixiangYan",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "ioredis": "^4.28.0",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^8.0.8",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "sha1": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/ioredis": "^4.27.7",
+    "@types/koa": "^2.13.1",
+    "@types/node": "^14.14.32",
+    "nodemon": "^2.0.13"
+  }
+}
